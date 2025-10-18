@@ -702,3 +702,120 @@ textarea {
   to {
     opacity: 0;
     top: 27px; } }
+/* Contact Section */
+.contact {
+    padding: 5rem 0;
+    background: #f8fafc;
+}
+
+.contact__content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    text-align: center;
+}
+
+.contact__title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #000;
+}
+
+.contact__desc {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 3rem;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact__details {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.contact__item {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+}
+
+.contact__item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.contact__icon {
+    font-size: 1.8rem;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f3f4f6;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.contact__text h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #000;
+}
+
+.contact__text a,
+.contact__text p {
+    color: #666;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    margin: 0;
+}
+
+.contact__text a:hover {
+    color: #000;
+}
+
+/* Call to Action Buttons */
+.contact__cta {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact__cta .btn {
+    text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact__details {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact__item {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+    
+    .contact__cta {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .contact__cta .btn {
+        width: 200px;
+    }
+}
